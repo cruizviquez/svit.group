@@ -3,6 +3,6 @@ import react from '@astrojs/react';
 
 export default defineConfig({
   site: 'https://cruizviquez.github.io',
-  base: '/svit-group',
+  base: '/svit.group',
   integrations: [react()],
 });
