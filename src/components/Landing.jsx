@@ -607,9 +607,9 @@ export default function AIConsultancyLanding() {
             <p className="text-xl text-gray-300 mb-8">
               Let's discuss how AI can unlock new opportunities for your organization
             </p>
-            <button className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300">
+            <a href="https://cal.com/svit.group/free-consultation" target="_blank" rel="noopener noreferrer" className="inline-block px-10 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300">
               Schedule a Free Consultation
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -833,7 +833,7 @@ export default function AIConsultancyLanding() {
             <div>
               <h4 className="font-bold mb-4 text-purple-400">Contact</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>hello@svit.group</li>
+                <li><a href="mailto:hello@svit.group" className="hover:text-white transition-colors">hello@svit.group</a></li>
                 <li><a href="https://www.linkedin.com/company/svit-group/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a></li>
               </ul>
             </div>
