@@ -93,7 +93,7 @@ export default function AIConsultancyLanding() {
             </a>
             
             <div className="hidden md:flex space-x-8">
-              {['Services', 'Solutions', 'About', 'Contact'].map(item => (
+              {['Services', 'Solutions', 'Blog', 'About', 'Contact'].map(item => (
                 <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-cyan-400 transition-colors cursor-pointer">
                   {item}
                 </a>
@@ -110,7 +110,7 @@ export default function AIConsultancyLanding() {
         {mobileMenuOpen && (
           <div className="md:hidden bg-gray-900/98 backdrop-blur-lg">
             <div className="px-4 pt-2 pb-4 space-y-2">
-              {['Services', 'Solutions', 'About', 'Contact'].map(item => (
+              {['Services', 'Solutions', 'Blog', 'About', 'Contact'].map(item => (
                 <a key={item} href={`#${item.toLowerCase()}`} className="block py-2 hover:text-cyan-400 transition-colors">
                   {item}
                 </a>
@@ -636,12 +636,25 @@ export default function AIConsultancyLanding() {
               </div>
 
               <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700">
-                <h3 className="text-2xl font-bold mb-4 text-purple-400">Expert Team</h3>
+                <h3 className="text-2xl font-bold mb-4 text-green-400">Our Story</h3>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  Our team comprises world-class AI experts, including PhDs in Computer Science and Machine Learning specialists with decades of combined experience. We bring academic rigor and industry expertise to every project, ensuring cutting-edge solutions backed by solid research.
+                  SVIT.GROUP was born from a simple but powerful conviction: that AI and predictive intelligence shouldn't be reserved for tech giants alone.
+                </p>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  Our founders — a group of engineers, data scientists, and business strategists — had spent years inside large corporations watching the same story repeat itself: inefficiencies hiding in plain sight, millions in unnecessary costs, and decisions made on gut feeling when data was right there, untapped. They knew there was a better way.
+                </p>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  So they left the comfort of their corporate roles and built something new. Starting with a small team in San Diego, they channeled their experience into building AI and machine learning solutions that actually move the needle — not just impressive demos, but real models that predict demand, flag anomalies, optimize resources, and generate measurable savings from day one.
                 </p>
                 <p className="text-gray-300 leading-relaxed">
-                  Led by <span className="text-purple-400 font-semibold">Dr. Carlos Ruiz Viquez</span>, a distinguished AI Scientist and Researcher and a leading voice in these topics, we combine theoretical excellence with practical innovation to deliver transformative AI solutions.
+                  Today, SVIT.GROUP works with companies across industries to make operations smarter and leaner. The mission has never changed: put the right intelligence in the right hands, and let the results speak for themselves.
+                </p>
+              </div>
+
+              <div className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-700">
+                <h3 className="text-2xl font-bold mb-4 text-purple-400">Expert Team</h3>
+                <p className="text-gray-300 leading-relaxed">
+                  Our team comprises world-class AI experts, including PhDs in Computer Science and Machine Learning specialists with decades of combined experience. We bring academic rigor and industry expertise to every project, ensuring cutting-edge solutions backed by solid research and a relentless focus on practical impact.
                 </p>
               </div>
 
@@ -716,6 +729,82 @@ export default function AIConsultancyLanding() {
         </div>
       </section>
 
+      {/* Blog Section */}
+      <section id="blog" className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-4">
+              Our <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">Blog</span>
+            </h2>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              Insights and stories on how AI is reshaping operations and driving real savings
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-10">
+            {/* Article 1 */}
+            <div className="group bg-gray-800/50 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-700 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/10">
+              <div className="bg-gradient-to-br from-cyan-600/30 to-blue-700/30 px-8 pt-10 pb-6">
+                <span className="px-3 py-1 bg-cyan-500/20 text-cyan-300 rounded-full text-xs font-semibold uppercase tracking-wide">Operations</span>
+                <h3 className="text-2xl font-bold mt-4 mb-2 group-hover:text-cyan-400 transition-colors">
+                  From Gut Feel to Data: How a Logistics Company Cut Costs by 31% in One Quarter
+                </h3>
+                <p className="text-gray-400 text-sm">March 2026 · 6 min read</p>
+              </div>
+              <div className="px-8 py-6 space-y-4">
+                <p className="text-gray-300 leading-relaxed">
+                  When a mid-sized logistics company came to us, their operations team was drowning in spreadsheets. Route planning, warehouse staffing, and fuel budgeting were all driven by experience and instinct — not bad inputs, but not scalable ones either.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  We built a predictive operations layer that ingested historical delivery data, weather patterns, and real-time traffic feeds. Within six weeks, the model was forecasting daily route loads with 89% accuracy — and automatically adjusting staffing recommendations each morning.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  The results after one quarter: a 31% reduction in overtime costs, 18% fewer empty return trips, and a 22% drop in fuel spend. But the shift that surprised the operations director most wasn't financial — it was cultural. "The team stopped arguing about who was right," he told us. "Now we just look at the data."
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  Efficiency gains don't always require a complete system overhaul. Sometimes the biggest lever is simply surfacing the right information, at the right time, to the right person. That's where AI earns its keep.
+                </p>
+                <div className="pt-4 flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-cyan-500/10 text-cyan-400 rounded-full text-xs">Predictive Analytics</span>
+                  <span className="px-3 py-1 bg-cyan-500/10 text-cyan-400 rounded-full text-xs">Logistics</span>
+                  <span className="px-3 py-1 bg-cyan-500/10 text-cyan-400 rounded-full text-xs">Cost Reduction</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Article 2 */}
+            <div className="group bg-gray-800/50 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-700 hover:border-purple-500/50 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/10">
+              <div className="bg-gradient-to-br from-purple-600/30 to-pink-700/30 px-8 pt-10 pb-6">
+                <span className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-xs font-semibold uppercase tracking-wide">Manufacturing</span>
+                <h3 className="text-2xl font-bold mt-4 mb-2 group-hover:text-purple-400 transition-colors">
+                  The Hidden Cost of Reactive Maintenance — and How Predictive AI Changed Everything
+                </h3>
+                <p className="text-gray-400 text-sm">February 2026 · 7 min read</p>
+              </div>
+              <div className="px-8 py-6 space-y-4">
+                <p className="text-gray-300 leading-relaxed">
+                  Every manufacturer knows the dread of an unplanned shutdown. A line stops, production halts, and a chain reaction of costs begins — emergency technicians, expedited parts, missed shipments, and customer penalties. For one industrial manufacturer we worked with, unplanned downtime was costing them over $2.4M a year.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  The root problem wasn't their equipment — it was their maintenance strategy. They were reacting to failures instead of preventing them. Our team integrated IoT sensor data from 140 machines into a predictive maintenance model that flagged anomalies up to 72 hours before a breakdown was likely.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  In the first year, unplanned downtime dropped by 67%. Maintenance teams shifted from firefighting to planned, scheduled interventions — which also meant less overtime and fewer emergency part orders. The total annual savings came to $1.9M, with the system paying for itself in under five months.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  The broader lesson: in manufacturing, efficiency isn't just about producing more — it's about failing less. Predictive AI doesn't eliminate risk, but it turns the unknown into the manageable.
+                </p>
+                <div className="pt-4 flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full text-xs">Predictive Maintenance</span>
+                  <span className="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full text-xs">Manufacturing</span>
+                  <span className="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full text-xs">IoT</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-900/80 backdrop-blur-lg border-t border-gray-800 py-12 px-4">
         <div className="max-w-7xl mx-auto">
@@ -735,9 +824,9 @@ export default function AIConsultancyLanding() {
             <div>
               <h4 className="font-bold mb-4 text-cyan-400">Company</h4>
               <ul className="space-y-2 text-gray-400">
-                <li className="hover:text-white cursor-pointer transition-colors">About Us</li>
+                <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
                 <li className="hover:text-white cursor-pointer transition-colors">Careers</li>
-                <li className="hover:text-white cursor-pointer transition-colors">Blog</li>
+                <li><a href="#blog" className="hover:text-white transition-colors">Blog</a></li>
               </ul>
             </div>
             
@@ -745,7 +834,7 @@ export default function AIConsultancyLanding() {
               <h4 className="font-bold mb-4 text-purple-400">Contact</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>hello@svit.group</li>
-                <li>LinkedIn</li>
+                <li><a href="https://www.linkedin.com/company/svit-group/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a></li>
               </ul>
             </div>
           </div>
